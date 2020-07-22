@@ -1,0 +1,44 @@
+:root {
+    --black-square: #333;
+    --white-square: #ccc;
+    --black-piece: #000;
+    --white-piece: #fff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+}
+
+.square {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square.white {
+    background: url('images1.jpg');
+}
+
+.square.black {
+    background: url('dark.jpg');
+}
+
+.piece {
+    font-size: 40px;
+}
+
+.piece.white {
+    color: var(--white-piece);
+    -webkit-text-stroke: 2px #000;
+}
+
+.piece.black {
+    color: var(--black-piece);
+    -webkit-text-stroke: 2px #fff;
+}
